@@ -1,0 +1,561 @@
+
+/* MAIN STAFF ANNOUNCEMENT SCREEN */
+.staff-announcement-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  background-color: #fff7f7;
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+.staff-announcement-screen,
+.staff-announcement-screen * {
+  box-sizing: border-box;
+}
+
+/* LEFT SIDEBAR */
+.staff-announcement-sidebar {
+  width: 220px;
+  min-width: 220px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #990000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CLINIQ LOGO */
+.staff-announcement-brand {
+  height: 92px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.staff-announcement-logo {
+  display: block;
+  width: 185px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* SIDEBAR NAVIGATION */
+.staff-announcement-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 8px 12px;
+}
+
+.staff-announcement-menu-item {
+  width: 100%;
+  min-height: 49px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.staff-announcement-menu-item:hover {
+  background-color: #b92727;
+}
+
+/* ACTIVE ANNOUNCEMENT TAB */
+.staff-announcement-menu-item.active {
+  background-color: #ffe5e5;
+  color: #990000;
+}
+
+/* RIGHT MAIN AREA */
+.staff-announcement-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOP RED HEADER */
+.staff-announcement-topbar {
+  width: 100%;
+  height: 57px;
+  min-height: 57px;
+  padding: 0 22px;
+  background-color: #990000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* STAFF PROFILE ICON */
+.staff-announcement-profile {
+  width: 39px;
+  height: 39px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.staff-announcement-profile svg {
+  width: 36px;
+  height: 36px;
+}
+
+/* MAIN CONTENT */
+.staff-announcement-content {
+  flex: 1;
+  width: 100%;
+  padding: 20px 25px 45px;
+  background-color: #fff7f7;
+}
+
+/* PAGE TITLE */
+.staff-announcement-title {
+  margin: 0;
+  color: #990000;
+  font-size: clamp(36px, 4.5vw, 58px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* PAGE SUBTITLE */
+.staff-announcement-subtitle {
+  margin: 7px 0 25px;
+  color: #777777;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* CREATE AND CURRENT ANNOUNCEMENT CARDS */
+.staff-announcement-create-card,
+.staff-announcement-current-card {
+  width: 100%;
+  max-width: 960px;
+  margin-bottom: 24px;
+  padding: 18px 25px 22px;
+  border: 1.5px solid #e23a3a;
+  border-radius: 18px;
+  background-color: #ffffff;
+}
+
+/* CARD HEADINGS */
+.staff-announcement-create-card h2,
+.staff-announcement-current-card h2 {
+  margin: 0 0 13px;
+  color: #990000;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* CREATE ANNOUNCEMENT FORM */
+.staff-announcement-create-card form {
+  width: 100%;
+}
+
+/* TWO-COLUMN FORM LAYOUT */
+.staff-announcement-form-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(185px, 1fr);
+  gap: 45px;
+  align-items: start;
+}
+
+/* FORM COLUMNS */
+.staff-announcement-form-left,
+.staff-announcement-form-right {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* FORM FIELDS */
+.staff-announcement-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 15px;
+}
+
+/* FIELD LABELS */
+.staff-announcement-field label {
+  color: #111111;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* REQUIRED FIELD ASTERISK */
+.staff-announcement-field label span {
+  color: #b00000;
+}
+
+/* TITLE AND DATE INPUTS */
+.staff-announcement-field input {
+  width: 100%;
+  min-height: 39px;
+  padding: 9px 12px;
+  border: 1px solid #c83a3a;
+  border-radius: 9px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.14);
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  outline: none;
+}
+
+/* MESSAGE TEXT AREA */
+.staff-announcement-field textarea {
+  width: 100%;
+  min-height: 73px;
+  padding: 11px 12px;
+  border: 1px solid #c83a3a;
+  border-radius: 9px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.14);
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  outline: none;
+  resize: vertical;
+}
+
+/* INPUT PLACEHOLDERS */
+.staff-announcement-field input::placeholder,
+.staff-announcement-field textarea::placeholder {
+  color: #999999;
+}
+
+/* INPUT FOCUS */
+.staff-announcement-field input:focus,
+.staff-announcement-field textarea:focus {
+  border: 2px solid #990000;
+}
+
+/* DATE INPUT */
+.staff-announcement-field input[type="date"] {
+  cursor: pointer;
+}
+
+/* CANCEL AND PUBLISH BUTTONS */
+.staff-announcement-actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 13px;
+  margin-top: 29px;
+}
+
+/* CANCEL BUTTON */
+.staff-announcement-cancel {
+  min-width: 99px;
+  min-height: 37px;
+  padding: 9px 15px;
+  border: 2px solid #b00000;
+  border-radius: 9px;
+  background-color: #ffffff;
+  color: #990000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* PUBLISH BUTTON */
+.staff-announcement-publish {
+  min-width: 120px;
+  min-height: 37px;
+  padding: 9px 16px;
+  border: none;
+  border-radius: 9px;
+  background-color: #a00000;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-announcement-cancel:hover {
+  background-color: #ffe5e5;
+}
+
+.staff-announcement-publish:hover {
+  background-color: #800000;
+}
+
+/* CURRENT ANNOUNCEMENTS SECTION */
+.staff-announcement-current-card {
+  min-height: 275px;
+}
+
+/* ANNOUNCEMENT LIST */
+.staff-announcement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* INDIVIDUAL ANNOUNCEMENT */
+.staff-announcement-item {
+  width: 100%;
+  min-height: 77px;
+  padding: 12px 15px;
+  border: 1px solid #e23a3a;
+  border-radius: 9px;
+  background-color: #ffe5e5;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* ANNOUNCEMENT TEXT */
+.staff-announcement-item-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.staff-announcement-item-details h3 {
+  margin: 0 0 6px;
+  color: #990000;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.staff-announcement-item-details p {
+  margin: 0;
+  color: #222222;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+}
+
+/* DATE AND MENU AREA */
+.staff-announcement-item-right {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  flex-shrink: 0;
+}
+
+/* ANNOUNCEMENT DATE */
+.staff-announcement-item-date {
+  color: #111111;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* THREE-DOT MENU WRAPPER */
+.staff-announcement-menu-wrapper {
+  position: relative;
+}
+
+/* THREE-DOT BUTTON */
+.staff-announcement-more {
+  width: 29px;
+  height: 37px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #111111;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.staff-announcement-more:hover {
+  background-color: #ffd0d0;
+}
+
+/* EDIT / DELETE DROPDOWN */
+.staff-announcement-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+  width: 120px;
+  padding: 5px;
+  border: 1px solid #e0b0b0;
+  border-radius: 9px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+}
+
+/* DROPDOWN BUTTONS */
+.staff-announcement-dropdown button {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #990000;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+}
+
+.staff-announcement-dropdown button:hover {
+  background-color: #ffe5e5;
+}
+
+/* EMPTY ANNOUNCEMENT LIST */
+.staff-announcement-empty {
+  margin: 15px 0;
+  color: #777777;
+  font-size: 15px;
+}
+
+/* FRONTEND DEMO NOTIFICATION */
+.staff-announcement-notice {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 0 15px;
+  padding: 13px 16px;
+  border: 1px solid #990000;
+  border-radius: 10px;
+  background-color: #ffe5e5;
+  color: #990000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* PREVIEW DISCLAIMER */
+.staff-announcement-preview {
+  width: 100%;
+  max-width: 960px;
+  margin: 10px 0;
+  color: #990000;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+.staff-announcement-menu-item:focus-visible,
+.staff-announcement-profile:focus-visible,
+.staff-announcement-cancel:focus-visible,
+.staff-announcement-publish:focus-visible,
+.staff-announcement-more:focus-visible,
+.staff-announcement-dropdown button:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+/* MEDIUM DESKTOP / TABLET */
+@media (max-width: 1100px) {
+  .staff-announcement-sidebar {
+    width: 210px;
+    min-width: 210px;
+  }
+
+  .staff-announcement-menu-item {
+    font-size: 18px;
+  }
+
+  .staff-announcement-content {
+    padding: 20px 24px 40px;
+  }
+
+  .staff-announcement-form-grid {
+    gap: 25px;
+  }
+
+  .staff-announcement-create-card,
+  .staff-announcement-current-card {
+    padding: 17px 20px 20px;
+  }
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 760px) {
+  .staff-announcement-sidebar {
+    width: 160px;
+    min-width: 160px;
+  }
+
+  .staff-announcement-brand {
+    height: 75px;
+    padding: 12px;
+  }
+
+  .staff-announcement-logo {
+    width: 140px;
+  }
+
+  .staff-announcement-menu {
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .staff-announcement-menu-item {
+    min-height: 42px;
+    font-size: 14px;
+  }
+
+  .staff-announcement-content {
+    padding: 18px 14px 35px;
+  }
+
+  .staff-announcement-title {
+    font-size: 35px;
+  }
+
+  .staff-announcement-subtitle {
+    font-size: 13px;
+  }
+
+  .staff-announcement-form-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .staff-announcement-actions {
+    margin-top: 10px;
+  }
+
+  .staff-announcement-create-card h2,
+  .staff-announcement-current-card h2 {
+    font-size: 20px;
+  }
+
+  .staff-announcement-item {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .staff-announcement-item-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,183 @@
+
+/* Main Screen */
+.duplicate-queue-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* CLINIQ Header */
+.duplicate-queue-header {
+  height: 52px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.duplicate-queue-logo {
+  width: 125px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Main Content */
+.duplicate-queue-content {
+  max-width: 430px;
+  min-height: calc(100dvh - 119px);
+  margin: 0 auto;
+  padding: 30px 28px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* White Information Card */
+.duplicate-queue-card {
+  width: 100%;
+  padding: 22px 18px 25px;
+  background-color: #ffffff;
+  border: 3px solid #990000;
+  border-radius: 16px;
+  box-shadow: 0 4px 4px #00000030;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Red Warning Icon */
+.duplicate-queue-icon {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background-color: #a00000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 4px #00000030;
+}
+
+.duplicate-queue-icon svg {
+  width: 80px;
+  height: 80px;
+}
+
+/* Heading */
+.duplicate-queue-card h1 {
+  margin: 0 0 15px;
+  font-size: clamp(25px, 7.5vw, 34px);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #000000;
+  letter-spacing: -0.5px;
+}
+
+/* Description */
+.duplicate-queue-card p {
+  margin: 0 0 25px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/* View My Queue Button */
+.duplicate-queue-view {
+  width: 230px;
+  max-width: 100%;
+  min-height: 50px;
+  padding: 10px 15px;
+  background-color: #990000;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 3px 4px #00000030;
+  cursor: pointer;
+}
+
+.duplicate-queue-view:active {
+  background-color: #7a0000;
+}
+
+/* Bottom Navigation Bar */
+.duplicate-queue-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  min-height: 67px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background-color: #990000;
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+/* Navigation Buttons */
+.duplicate-queue-bottom-nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Active Queue Navigation */
+.duplicate-queue-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Navigation Icons */
+.duplicate-queue-nav-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Smaller Phone Screens */
+@media (max-width: 360px) {
+  .duplicate-queue-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .duplicate-queue-card {
+    padding: 20px 12px;
+  }
+
+  .duplicate-queue-icon {
+    width: 115px;
+    height: 115px;
+  }
+
+  .duplicate-queue-card h1 {
+    font-size: 26px;
+  }
+
+  .duplicate-queue-card p {
+    font-size: 11px;
+  }
+
+  .duplicate-queue-view {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,208 @@
+
+/* Main Staff Sign In Screen */
+.staff-signin-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CLINIQ Logo Header */
+.staff-signin-header {
+  width: 100%;
+  padding: 22px 35px;
+}
+
+.staff-signin-logo {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Center Content */
+.staff-signin-content {
+  width: 100%;
+  max-width: 650px;
+  margin: 30px auto 0;
+  padding: 0 24px 65px;
+  text-align: center;
+}
+
+/* Page Title */
+.staff-signin-content h1 {
+  margin: 0;
+  color: #990000;
+  font-size: clamp(40px, 5.5vw, 66px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* Subtitle */
+.staff-signin-description {
+  margin: 15px 0 36px;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Form */
+.staff-signin-form {
+  width: 100%;
+  max-width: 390px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Form Fields */
+.staff-signin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 18px;
+}
+
+.staff-signin-field label {
+  padding-left: 10px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Input Boxes */
+.staff-signin-field input {
+  width: 100%;
+  height: 48px;
+  padding: 12px 14px;
+  background-color: #ffffff;
+  border: 1px solid #c44b4b;
+  border-radius: 11px;
+  box-shadow: 0 3px 4px #00000030;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+
+.staff-signin-field input:focus {
+  border: 2px solid #990000;
+}
+
+/* Forgot Password */
+.staff-signin-forgot {
+  align-self: flex-end;
+  padding: 0 10px;
+  margin-top: -9px;
+  background: transparent;
+  border: none;
+  color: #990000;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Validation Message */
+.staff-signin-error {
+  margin: 15px 0 0;
+  color: #990000;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Sign In Button */
+.staff-signin-submit {
+  width: 200px;
+  max-width: 100%;
+  height: 44px;
+  margin: 50px auto 0;
+  padding: 10px 15px;
+  background-color: #a00000;
+  border: none;
+  border-radius: 13px;
+  box-shadow: 0 4px 4px #00000030;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-signin-submit:hover {
+  background-color: #880000;
+}
+
+.staff-signin-submit:focus-visible,
+.staff-signin-forgot:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+/* Frontend Demo Notice */
+.staff-signin-demo {
+  max-width: 420px;
+  margin: 25px auto 0;
+  color: #990000;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* Smaller Desktop / Tablet */
+@media (max-width: 768px) {
+  .staff-signin-header {
+    padding: 20px;
+  }
+
+  .staff-signin-logo {
+    width: 160px;
+  }
+
+  .staff-signin-content {
+    margin-top: 25px;
+  }
+
+  .staff-signin-content h1 {
+    font-size: 46px;
+  }
+
+  .staff-signin-description {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .staff-signin-content {
+    margin-top: 35px;
+    padding: 0 22px 60px;
+  }
+
+  .staff-signin-content h1 {
+    font-size: 38px;
+  }
+
+  .staff-signin-description {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .staff-signin-field label {
+    font-size: 14px;
+  }
+
+  .staff-signin-field input {
+    height: 44px;
+  }
+
+  .staff-signin-submit {
+    margin-top: 35px;
+  }
+}

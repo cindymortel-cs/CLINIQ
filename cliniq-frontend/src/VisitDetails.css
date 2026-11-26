@@ -1,0 +1,260 @@
+
+/* Main Screen */
+.visit-details-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.visit-details-header {
+  height: 52px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 15px;
+}
+
+/* Back Button */
+.visit-details-back {
+  border: none;
+  background: transparent;
+  color: #990000;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.visit-details-header h2 {
+  margin: 0;
+  color: #990000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Main Content */
+.visit-details-content {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 38px 28px 100px;
+}
+
+/* Queue Number Card */
+.visit-details-ticket {
+  width: 100%;
+  min-height: 125px;
+  padding: 15px 22px;
+  background-color: #a00000;
+  border-radius: 17px;
+  box-shadow: 0 4px 4px #00000030;
+  color: #ffffff;
+  margin-bottom: 38px;
+}
+
+.visit-details-ticket-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.visit-details-label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.visit-details-ticket h1 {
+  margin: 12px 0 0;
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+/* Status Badges */
+.visit-details-badge {
+  padding: 4px 13px;
+  border-radius: 20px;
+  color: #000000;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.visit-details-badge.ongoing {
+  background-color: #fff3c4;
+}
+
+.visit-details-badge.completed {
+  background-color: #d9f1c7;
+}
+
+/* Visit Information Card */
+.visit-details-info-card {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: #ffffff;
+  border: 2px solid #990000;
+  border-radius: 14px;
+}
+
+/* Visit Information Rows */
+.visit-details-info-row {
+  min-height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid #c44b4b;
+  padding: 10px 8px;
+}
+
+.visit-details-info-row:last-child {
+  border-bottom: none;
+}
+
+.visit-details-info-row span {
+  color: #666666;
+  font-size: 12px;
+}
+
+.visit-details-info-row strong {
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Cancel Queue Request Button */
+.visit-details-cancel-button {
+  display: block;
+  width: 92%;
+  min-height: 52px;
+  margin: 38px auto 0;
+  padding: 10px 15px;
+  background-color: #ffe5e5;
+  border: 2px solid #990000;
+  border-radius: 15px;
+  color: #990000;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 4px #00000030;
+  cursor: pointer;
+}
+
+.visit-details-cancel-button:active {
+  background-color: #ffd5d5;
+}
+
+/* Completed Visit Notification */
+.visit-details-completed-message {
+  width: 100%;
+  min-height: 58px;
+  margin-top: 38px;
+  padding: 12px 14px;
+  background-color: #c34d4d;
+  border-radius: 13px;
+  box-shadow: 0 4px 4px #00000030;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.visit-details-completed-message p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Completed Notification Icon */
+.visit-details-alert-icon {
+  width: 34px;
+  height: 34px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+/* Bottom Navigation Bar */
+.visit-details-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  min-height: 67px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background-color: #990000;
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+/* Navigation Buttons */
+.visit-details-bottom-nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Active Visits Navigation */
+.visit-details-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Navigation Icons */
+.visit-details-nav-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Smaller Phone Screens */
+@media (max-width: 360px) {
+  .visit-details-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .visit-details-ticket h1 {
+    font-size: 48px;
+  }
+
+  .visit-details-info-row span,
+  .visit-details-info-row strong {
+    font-size: 11px;
+  }
+
+  .visit-details-cancel-button {
+    font-size: 16px;
+  }
+
+  .visit-details-completed-message p {
+    font-size: 12px;
+  }
+}

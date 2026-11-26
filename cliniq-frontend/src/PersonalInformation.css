@@ -1,0 +1,353 @@
+
+/* Main Screen */
+.personal-information-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Edit Profile Header */
+.personal-information-header {
+  height: 52px;
+  padding: 0 15px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Back Button */
+.personal-information-back {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #990000;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.personal-information-header h2 {
+  margin: 0;
+  color: #990000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Main Content */
+.personal-information-content {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 20px 28px 110px;
+}
+
+/* Page Title */
+.personal-information-title {
+  margin: 0 0 22px;
+  font-size: 43px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #000000;
+}
+
+.personal-information-title span {
+  display: block;
+  color: #990000;
+}
+
+/* Form Layout */
+.personal-information-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Each Input Field */
+.personal-information-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.personal-information-field label {
+  padding-left: 7px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Input Boxes */
+.personal-information-field input {
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 12px;
+  background-color: #ffffff;
+  border: 1px solid #c44b4b;
+  border-radius: 13px;
+  box-shadow: 0 3px 4px #00000030;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.personal-information-field input:focus {
+  border: 2px solid #990000;
+}
+
+/* Save Changes Button */
+.personal-information-save {
+  width: 235px;
+  max-width: 100%;
+  min-height: 50px;
+  margin: 25px auto 0;
+  padding: 10px 15px;
+  background-color: #a00000;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 4px #00000030;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.personal-information-save:active {
+  background-color: #800000;
+}
+
+/* Bottom Navigation */
+.personal-information-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  min-height: 67px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background-color: #990000;
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+/* Navigation Buttons */
+.personal-information-bottom-nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Active Profile Navigation */
+.personal-information-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Navigation Icons */
+.personal-information-nav-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Smaller Phone Screens */
+@media (max-width: 360px) {
+  .personal-information-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .personal-information-title {
+    font-size: 37px;
+  }
+
+  .personal-information-field label {
+    font-size: 11px;
+  }
+
+  .personal-information-field input {
+    font-size: 13px;
+  }
+
+  .personal-information-form {
+    gap: 14px;
+  }
+
+  .personal-information-save {
+    font-size: 18px;
+  }
+}
+
+/* Prevent Bottom Navigation from Covering Form */
+@media (max-height: 700px) {
+  .personal-information-content {
+    padding-bottom: 130px;
+  }
+}
+
+/* UPDATED PERSONAL INFORMATION PROFILE CARD */
+
+.personal-information-profile-card {
+  width: 100%;
+  max-width: 340px;
+  min-height: 95px;
+  margin: 15px auto 20px;
+  padding: 12px 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background-color: #ffffff;
+  border: 2px solid #d0d0d0;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+}
+
+/* CIRCULAR PROFILE AVATAR */
+.personal-information-avatar {
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.personal-information-avatar svg {
+  width: 68px;
+  height: 68px;
+  display: block;
+}
+
+/* SELECTED PROFILE PHOTO */
+.personal-information-avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #b00000;
+  border-radius: 50%;
+}
+
+/* USER INFORMATION */
+.personal-information-profile-details {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+/* USER NAME */
+.personal-information-profile-details h2 {
+  margin: 0;
+  padding: 0;
+
+  color: #a00000;
+  font-family: Arial, sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.1;
+
+  overflow-wrap: break-word;
+}
+
+/* CHANGE PHOTO BUTTON */
+.personal-information-change-photo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 25px;
+  padding: 5px 17px;
+
+  background-color: #a00000;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 20px;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1.2;
+
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.personal-information-change-photo:hover {
+  background-color: #800000;
+}
+
+/* KEEP FILE INPUT ACCESSIBLE BUT VISUALLY HIDDEN */
+.personal-information-photo-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.personal-information-profile-details:focus-within
+.personal-information-change-photo {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+/* SMALL MOBILE SCREENS */
+@media (max-width: 380px) {
+  .personal-information-profile-card {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .personal-information-avatar {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+  }
+
+  .personal-information-avatar svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .personal-information-profile-details h2 {
+    font-size: 20px;
+  }
+
+  .personal-information-change-photo {
+    font-size: 10px;
+    padding: 5px 13px;
+  }
+}

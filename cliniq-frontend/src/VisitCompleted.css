@@ -1,0 +1,220 @@
+
+/* Main Screen */
+.visit-completed-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* CLINIQ Header */
+.visit-completed-header {
+  height: 52px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.visit-completed-logo {
+  width: 125px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Main Content */
+.visit-completed-content {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 115px 28px 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Red Checkmark */
+.visit-completed-checkmark {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background-color: #990000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 4px #00000030;
+  margin-bottom: 25px;
+}
+
+.visit-completed-checkmark svg {
+  width: 90px;
+  height: 90px;
+}
+
+/* Page Title */
+.visit-completed-title {
+  margin: 0;
+  color: #000000;
+  font-size: clamp(30px, 8.5vw, 42px);
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.visit-completed-title span {
+  color: #990000;
+}
+
+/* Confirmation Message */
+.visit-completed-subtitle {
+  margin: 15px 0 30px;
+  color: #333333;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Visit Details Card */
+.visit-completed-status-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 3px solid #990000;
+  border-radius: 13px;
+  padding: 8px 15px;
+}
+
+/* Status Rows */
+.visit-completed-status-row {
+  min-height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #990000;
+}
+
+.visit-completed-status-row:last-child {
+  border-bottom: none;
+}
+
+.visit-completed-status-row span {
+  color: #777777;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.visit-completed-status-row strong {
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+/* View Visit Record Button */
+.visit-completed-view-button {
+  display: block;
+  width: 260px;
+  max-width: 100%;
+  height: 50px;
+  margin-top: 36px;
+  background-color: #990000;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 3px 4px #00000030;
+  cursor: pointer;
+}
+
+.visit-completed-view-button:active {
+  background-color: #7a0000;
+}
+
+/* Frontend Preview Notice */
+.visit-completed-preview {
+  margin-top: 15px;
+  color: #990000;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Bottom Navigation Bar */
+.visit-completed-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  min-height: 67px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background-color: #990000;
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+/* Navigation Buttons */
+.visit-completed-bottom-nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Active Queue Navigation */
+.visit-completed-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Navigation Icons */
+.visit-completed-nav-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Smaller Phone Screens */
+@media (max-width: 360px) {
+  .visit-completed-content {
+    padding: 65px 18px 110px;
+  }
+
+  .visit-completed-checkmark {
+    width: 115px;
+    height: 115px;
+  }
+
+  .visit-completed-checkmark svg {
+    width: 75px;
+    height: 75px;
+  }
+
+  .visit-completed-title {
+    font-size: 28px;
+  }
+
+  .visit-completed-subtitle {
+    font-size: 11px;
+  }
+
+  .visit-completed-view-button {
+    font-size: 18px;
+  }
+}

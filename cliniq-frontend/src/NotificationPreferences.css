@@ -1,0 +1,255 @@
+
+/* Main Screen */
+.notification-preferences-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Notifications Header */
+.notification-preferences-header {
+  height: 52px;
+  padding: 0 15px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Back Button */
+.notification-preferences-back {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #990000;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.notification-preferences-header h2 {
+  margin: 0;
+  color: #990000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Main Content */
+.notification-preferences-content {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 20px 28px 110px;
+}
+
+/* Page Title */
+.notification-preferences-title {
+  margin: 0 0 28px;
+  color: #000000;
+  font-size: 43px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.notification-preferences-title span {
+  display: block;
+  color: #990000;
+}
+
+/* Notification Settings */
+.notification-preferences-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* White Notification Cards */
+.notification-preferences-card {
+  width: 100%;
+  min-height: 112px;
+  padding: 14px 15px;
+  background-color: #ffffff;
+  border: 3px solid #990000;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Notification Text */
+.notification-preferences-text {
+  flex: 1;
+}
+
+.notification-preferences-text h3 {
+  margin: 0 0 7px;
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.notification-preferences-text p {
+  margin: 0;
+  color: #777777;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Toggle Switch */
+.notification-preferences-toggle {
+  position: relative;
+  width: 46px;
+  height: 22px;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  border-radius: 20px;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Toggle ON */
+.notification-preferences-toggle.on {
+  background-color: #a00000;
+}
+
+/* White Toggle Knob */
+.notification-preferences-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+/* Move Knob When ON */
+.notification-preferences-toggle.on
+.notification-preferences-knob {
+  transform: translateX(24px);
+}
+
+/* Keyboard Focus */
+.notification-preferences-toggle:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+/* Clinic Connection Notice */
+.notification-preferences-notice {
+  width: 100%;
+  min-height: 60px;
+  margin-top: 22px;
+  padding: 12px;
+  background-color: #c34d4d;
+  border-radius: 13px;
+  box-shadow: 0 4px 4px #00000030;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+}
+
+.notification-preferences-notice p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Notice Exclamation Icon */
+.notification-preferences-alert-icon {
+  width: 33px;
+  height: 33px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+/* Bottom Navigation */
+.notification-preferences-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  min-height: 67px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background-color: #990000;
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+/* Navigation Buttons */
+.notification-preferences-bottom-nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Active Profile Navigation */
+.notification-preferences-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Navigation Icons */
+.notification-preferences-nav-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Smaller Phone Screens */
+@media (max-width: 360px) {
+  .notification-preferences-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .notification-preferences-title {
+    font-size: 37px;
+  }
+
+  .notification-preferences-card {
+    padding: 12px;
+  }
+
+  .notification-preferences-text h3 {
+    font-size: 15px;
+  }
+
+  .notification-preferences-text p {
+    font-size: 11px;
+  }
+
+  .notification-preferences-notice p {
+    font-size: 11px;
+  }
+}

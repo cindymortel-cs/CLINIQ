@@ -1,0 +1,618 @@
+
+/* MAIN STAFF SETTINGS SCREEN */
+.staff-settings-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  background-color: #fff7f7;
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+.staff-settings-screen,
+.staff-settings-screen * {
+  box-sizing: border-box;
+}
+
+/* LEFT SIDEBAR */
+.staff-settings-sidebar {
+  width: 220px;
+  min-width: 220px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #990000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CLINIQ LOGO */
+.staff-settings-brand {
+  height: 92px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.staff-settings-logo {
+  display: block;
+  width: 185px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* SIDEBAR NAVIGATION */
+.staff-settings-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 8px 12px;
+}
+
+.staff-settings-menu-item {
+  width: 100%;
+  min-height: 49px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.staff-settings-menu-item:hover {
+  background-color: #b92727;
+}
+
+/* ACTIVE SETTINGS TAB */
+.staff-settings-menu-item.active {
+  background-color: #ffe5e5;
+  color: #990000;
+}
+
+/* RIGHT MAIN AREA */
+.staff-settings-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* RED TOP HEADER */
+.staff-settings-topbar {
+  width: 100%;
+  height: 57px;
+  min-height: 57px;
+  padding: 0 22px;
+  background-color: #990000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* STAFF PROFILE ICON */
+.staff-settings-profile {
+  width: 39px;
+  height: 39px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.staff-settings-profile svg {
+  width: 36px;
+  height: 36px;
+}
+
+/* MAIN CONTENT */
+.staff-settings-content {
+  flex: 1;
+  width: 100%;
+  padding: 20px 25px 40px;
+  background-color: #fff7f7;
+}
+
+/* PAGE TITLE */
+.staff-settings-title {
+  margin: 0;
+  color: #990000;
+  font-size: clamp(38px, 4.5vw, 58px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* PAGE SUBTITLE */
+.staff-settings-subtitle {
+  margin: 8px 0 23px;
+  color: #777777;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* SHARED SETTINGS CARD DESIGN */
+.staff-settings-account-card,
+.staff-settings-password-card,
+.staff-settings-devices-card {
+  background-color: #ffffff;
+  border: 1.5px solid #dc3636;
+  border-radius: 18px;
+}
+
+/* CARD HEADINGS */
+.staff-settings-account-card h2,
+.staff-settings-password-card h2,
+.staff-settings-devices-card h2 {
+  margin: 0 0 13px;
+  color: #990000;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* ACCOUNT INFORMATION CARD */
+.staff-settings-account-card {
+  width: 100%;
+  max-width: 960px;
+  padding: 17px 28px 20px;
+  margin-bottom: 16px;
+}
+
+/* ACCOUNT INFORMATION TWO-COLUMN LAYOUT */
+.staff-settings-account-layout {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.9fr) minmax(260px, 1.1fr);
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* LEFT PROFILE PHOTO SECTION */
+.staff-settings-photo-section {
+  min-height: 195px;
+  padding: 3px 20px 5px 0;
+  border-right: 1.5px solid #cccccc;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* PROFILE AVATAR */
+.staff-settings-avatar {
+  width: 125px;
+  height: 125px;
+  min-width: 125px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staff-settings-avatar svg {
+  width: 125px;
+  height: 125px;
+  display: block;
+}
+
+/* UPLOADED PROFILE PHOTO */
+.staff-settings-avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #b00000;
+  border-radius: 50%;
+}
+
+/* CHANGE PHOTO BUTTON */
+.staff-settings-change-photo {
+  min-width: 140px;
+  min-height: 34px;
+  padding: 8px 15px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #b00000;
+  border-radius: 7px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+
+  color: #990000;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-settings-change-photo:hover {
+  background-color: #ffe5e5;
+}
+
+/* HIDDEN PHOTO FILE INPUT */
+.staff-settings-photo-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ACCOUNT DETAILS FORM */
+.staff-settings-account-form {
+  width: 100%;
+  min-width: 0;
+  padding: 0 0 0 2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* FORM FIELDS */
+.staff-settings-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+/* FIELD LABELS */
+.staff-settings-field label {
+  color: #111111;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* TEXT, EMAIL, PASSWORD AND DROPDOWN */
+.staff-settings-field input,
+.staff-settings-field select {
+  width: 100%;
+  height: 34px;
+  min-height: 34px;
+  padding: 7px 11px;
+
+  border: 1px solid #c83a3a;
+  border-radius: 7px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
+
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  outline: none;
+}
+
+/* ROLE DROPDOWN */
+.staff-settings-field select {
+  background-color: #ffe5e5;
+  color: #333333;
+  cursor: pointer;
+}
+
+.staff-settings-field select:invalid {
+  color: #777777;
+}
+
+/* FOCUSED FORM FIELDS */
+.staff-settings-field input:focus,
+.staff-settings-field select:focus {
+  border: 2px solid #990000;
+}
+
+/* SAVE CHANGES BUTTON */
+.staff-settings-save {
+  min-width: 135px;
+  min-height: 35px;
+  margin: 4px auto 0;
+  padding: 8px 18px;
+
+  border: none;
+  border-radius: 17px;
+  background-color: #a00000;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-settings-save:hover {
+  background-color: #800000;
+}
+
+/* BOTTOM TWO-CARD LAYOUT */
+.staff-settings-bottom-grid {
+  width: 100%;
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* CHANGE PASSWORD CARD */
+.staff-settings-password-card {
+  min-height: 240px;
+  padding: 17px 28px 16px;
+}
+
+.staff-settings-password-card form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PASSWORD FIELD SPACING */
+.staff-settings-password-card .staff-settings-field {
+  margin-bottom: 10px;
+}
+
+/* FORGOT PASSWORD LINK */
+.staff-settings-forgot {
+  align-self: flex-end;
+  padding: 0;
+  margin: -3px 0 11px;
+
+  border: none;
+  background: transparent;
+  color: #990000;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* UPDATE PASSWORD BUTTON */
+.staff-settings-update-password {
+  width: 165px;
+  max-width: 100%;
+  min-height: 34px;
+  margin: auto auto 0;
+  padding: 8px 12px;
+
+  border: none;
+  border-radius: 12px;
+  background-color: #a00000;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-settings-update-password:hover {
+  background-color: #800000;
+}
+
+/* MANAGE DEVICES CARD */
+.staff-settings-devices-card {
+  min-height: 240px;
+  padding: 17px 28px 16px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* SAMPLE DEVICE ROW */
+.staff-settings-device {
+  width: 100%;
+  padding: 2px 0 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  border-bottom: 1px solid #dddddd;
+}
+
+.staff-settings-device svg {
+  width: 36px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+/* DEVICE INFORMATION */
+.staff-settings-device-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.staff-settings-device-info strong {
+  display: block;
+  color: #990000;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.staff-settings-device-info p {
+  margin: 4px 0 0;
+  color: #888888;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* SIGN OUT FROM ALL DEVICES */
+.staff-settings-signout-devices {
+  width: 205px;
+  max-width: 100%;
+  min-height: 35px;
+  margin: auto auto 0;
+  padding: 8px 12px;
+
+  border: 2px solid #b00000;
+  border-radius: 8px;
+  background-color: #ffe5e5;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
+
+  color: #990000;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-settings-signout-devices:hover {
+  background-color: #ffcece;
+}
+
+/* FRONTEND DEMO NOTIFICATION */
+.staff-settings-notice {
+  width: 100%;
+  max-width: 960px;
+  margin: 20px 0 10px;
+  padding: 13px 16px;
+
+  border: 1px solid #990000;
+  border-radius: 10px;
+  background-color: #ffe5e5;
+
+  color: #990000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* PREVIEW DISCLAIMER */
+.staff-settings-preview {
+  width: 100%;
+  max-width: 960px;
+  margin: 14px 0;
+  color: #990000;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+.staff-settings-menu-item:focus-visible,
+.staff-settings-profile:focus-visible,
+.staff-settings-save:focus-visible,
+.staff-settings-forgot:focus-visible,
+.staff-settings-update-password:focus-visible,
+.staff-settings-signout-devices:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+.staff-settings-photo-section:focus-within
+.staff-settings-change-photo {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+/* MEDIUM DESKTOP / TABLET */
+@media (max-width: 1100px) {
+  .staff-settings-sidebar {
+    width: 210px;
+    min-width: 210px;
+  }
+
+  .staff-settings-menu-item {
+    font-size: 18px;
+  }
+
+  .staff-settings-content {
+    padding: 20px 24px 40px;
+  }
+
+  .staff-settings-account-card {
+    padding: 17px 20px 20px;
+  }
+
+  .staff-settings-password-card,
+  .staff-settings-devices-card {
+    padding: 17px 20px 16px;
+  }
+
+  .staff-settings-account-layout {
+    gap: 18px;
+  }
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 760px) {
+  .staff-settings-sidebar {
+    width: 160px;
+    min-width: 160px;
+  }
+
+  .staff-settings-brand {
+    height: 75px;
+    padding: 12px;
+  }
+
+  .staff-settings-logo {
+    width: 140px;
+  }
+
+  .staff-settings-menu {
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .staff-settings-menu-item {
+    min-height: 42px;
+    font-size: 14px;
+  }
+
+  .staff-settings-content {
+    padding: 18px 14px 35px;
+  }
+
+  .staff-settings-title {
+    font-size: 35px;
+  }
+
+  .staff-settings-subtitle {
+    font-size: 13px;
+  }
+
+  .staff-settings-account-layout {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .staff-settings-photo-section {
+    min-height: auto;
+    padding: 5px 0 15px;
+    border-right: none;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .staff-settings-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .staff-settings-account-card h2,
+  .staff-settings-password-card h2,
+  .staff-settings-devices-card h2 {
+    font-size: 20px;
+  }
+}

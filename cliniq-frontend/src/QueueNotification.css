@@ -1,0 +1,227 @@
+
+/* Main Screen */
+.approaching-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* CLINIQ Header */
+.approaching-header {
+  height: 52px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.approaching-logo {
+  width: 125px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Main Content */
+.approaching-content {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 65px 28px 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Red Bell Circle */
+.approaching-bell-circle {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  background-color: #990000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 4px #00000030;
+  margin-bottom: 18px;
+}
+
+.approaching-bell-circle svg {
+  width: 75px;
+  height: 75px;
+}
+
+/* Queue Notification Label */
+.approaching-label {
+  margin: 0 0 34px;
+  color: #990000;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Main Heading */
+.approaching-title {
+  margin: 0;
+  color: #000000;
+  font-size: clamp(32px, 9vw, 42px);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.approaching-title span {
+  color: #990000;
+}
+
+/* Subtitle */
+.approaching-subtitle {
+  margin: 14px 0 25px;
+  color: #333333;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Queue Status Card */
+.approaching-status-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 3px solid #990000;
+  border-radius: 13px;
+  padding: 8px 15px;
+}
+
+/* Status Rows */
+.approaching-status-row {
+  min-height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #990000;
+}
+
+.approaching-status-row:last-child {
+  border-bottom: none;
+}
+
+.approaching-status-row span {
+  color: #777777;
+  font-size: 12px;
+}
+
+.approaching-status-row strong {
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* I'm at the Clinic Button */
+.approaching-confirm-button {
+  display: block;
+  width: 245px;
+  max-width: 100%;
+  height: 50px;
+  margin-top: 32px;
+  background-color: #990000;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  box-shadow: 0 3px 4px #00000030;
+  cursor: pointer;
+}
+
+.approaching-confirm-button:active {
+  background-color: #7a0000;
+}
+
+/* Frontend Preview Notice */
+.approaching-preview {
+  margin-top: 15px;
+  color: #990000;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Bottom Navigation Bar */
+.approaching-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  min-height: 67px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background-color: #990000;
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+/* Navigation Buttons */
+.approaching-bottom-nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Active Queue Navigation */
+.approaching-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Navigation Icons */
+.approaching-nav-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Smaller Phone Screens */
+@media (max-width: 360px) {
+  .approaching-content {
+    padding: 45px 18px 110px;
+  }
+
+  .approaching-bell-circle {
+    width: 115px;
+    height: 115px;
+  }
+
+  .approaching-bell-circle svg {
+    width: 65px;
+    height: 65px;
+  }
+
+  .approaching-title {
+    font-size: 32px;
+  }
+
+  .approaching-status-row strong {
+    font-size: 11px;
+  }
+
+  .approaching-confirm-button {
+    font-size: 17px;
+  }
+}

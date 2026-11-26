@@ -1,0 +1,344 @@
+
+/* MAIN CALL NEXT SCREEN */
+.staff-call-next-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+.staff-call-next-screen,
+.staff-call-next-screen * {
+  box-sizing: border-box;
+}
+
+/* LEFT SIDEBAR */
+.staff-call-next-sidebar {
+  width: 220px;
+  min-width: 220px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #990000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CLINIQ LOGO */
+.staff-call-next-brand {
+  height: 92px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.staff-call-next-logo {
+  display: block;
+  width: 185px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* SIDEBAR MENU */
+.staff-call-next-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 8px 12px;
+}
+
+.staff-call-next-menu-item {
+  width: 100%;
+  min-height: 49px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.staff-call-next-menu-item:hover {
+  background-color: #b92727;
+}
+
+.staff-call-next-menu-item.active {
+  background-color: #ffe5e5;
+  color: #990000;
+}
+
+/* RIGHT MAIN AREA */
+.staff-call-next-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* RED TOP HEADER */
+.staff-call-next-topbar {
+  width: 100%;
+  height: 57px;
+  min-height: 57px;
+  padding: 0 22px;
+  background-color: #990000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* STAFF PROFILE ICON */
+.staff-call-next-profile {
+  width: 39px;
+  height: 39px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.staff-call-next-profile svg {
+  width: 36px;
+  height: 36px;
+}
+
+/* MAIN CONTENT */
+.staff-call-next-content {
+  flex: 1;
+  width: 100%;
+  padding: 20px 25px 45px;
+  background-color: #fff7f7;
+}
+
+/* PAGE TITLE */
+.staff-call-next-title {
+  margin: 0;
+  color: #000000;
+  font-size: clamp(36px, 4.5vw, 58px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.staff-call-next-title span {
+  color: #990000;
+}
+
+/* PAGE SUBTITLE */
+.staff-call-next-subtitle {
+  margin: 8px 0 34px;
+  color: #777777;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* LARGE RED PATIENT CARD */
+.staff-call-next-card {
+  width: 100%;
+  max-width: 650px;
+  min-height: 285px;
+  padding: 23px 28px;
+  border-radius: 13px;
+  background-color: #a00000;
+  box-shadow: 0 3px 4px #00000030;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CARD LABEL */
+.staff-call-next-label {
+  margin: 0 0 16px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+/* LARGE TICKET NUMBER */
+.staff-call-next-ticket {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(70px, 7vw, 100px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+/* PATIENT NAME AND SERVICE */
+.staff-call-next-patient {
+  margin: 10px 0 0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* CLINIC WI-FI NOTICE */
+.staff-call-next-broadcast {
+  margin: auto 0 0;
+  padding-top: 30px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+/* CONFIRM BUTTON CONTAINER */
+.staff-call-next-actions {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONFIRM CALL BUTTON */
+.staff-call-next-confirm {
+  width: 272px;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 13px;
+  background-color: #a00000;
+  box-shadow: 0 4px 4px #00000030;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-call-next-confirm:hover {
+  background-color: #800000;
+}
+
+/* FRONTEND DEMO MESSAGE */
+.staff-call-next-notice {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 22px;
+  padding: 13px 16px;
+  border: 1px solid #990000;
+  border-radius: 10px;
+  background-color: #ffe5e5;
+  color: #990000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* PREVIEW DISCLAIMER */
+.staff-call-next-preview {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 24px;
+  color: #990000;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+.staff-call-next-menu-item:focus-visible,
+.staff-call-next-profile:focus-visible,
+.staff-call-next-confirm:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+/* MEDIUM DESKTOP / TABLET */
+@media (max-width: 1100px) {
+  .staff-call-next-sidebar {
+    width: 210px;
+    min-width: 210px;
+  }
+
+  .staff-call-next-content {
+    padding: 20px 24px 40px;
+  }
+
+  .staff-call-next-menu-item {
+    font-size: 18px;
+  }
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 760px) {
+  .staff-call-next-sidebar {
+    width: 160px;
+    min-width: 160px;
+  }
+
+  .staff-call-next-brand {
+    height: 75px;
+    padding: 12px;
+  }
+
+  .staff-call-next-logo {
+    width: 140px;
+  }
+
+  .staff-call-next-menu {
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .staff-call-next-menu-item {
+    min-height: 42px;
+    font-size: 14px;
+  }
+
+  .staff-call-next-content {
+    padding: 18px 14px 35px;
+  }
+
+  .staff-call-next-title {
+    font-size: 35px;
+  }
+
+  .staff-call-next-subtitle {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .staff-call-next-card {
+    min-height: 260px;
+    padding: 20px 17px;
+  }
+
+  .staff-call-next-label {
+    font-size: 16px;
+  }
+
+  .staff-call-next-ticket {
+    font-size: clamp(48px, 9vw, 75px);
+  }
+
+  .staff-call-next-patient {
+    font-size: 16px;
+  }
+
+  .staff-call-next-broadcast {
+    font-size: 12px;
+  }
+
+  .staff-call-next-confirm {
+    font-size: 14px;
+  }
+}

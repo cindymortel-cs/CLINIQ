@@ -1,0 +1,287 @@
+
+/* Main Screen */
+.about-cliniq-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* About Header */
+.about-cliniq-header {
+  height: 52px;
+  padding: 0 15px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Back Button */
+.about-cliniq-back {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #990000;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.about-cliniq-header h2 {
+  margin: 0;
+  color: #990000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Main Content */
+.about-cliniq-content {
+  width: 100%;
+  max-width: 430px;
+  min-height: calc(100dvh - 52px);
+  margin: 0 auto;
+  padding: 25px 28px 95px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page Title */
+.about-cliniq-intro {
+  text-align: center;
+}
+
+.about-cliniq-intro h1 {
+  margin: 0;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -1px;
+}
+
+.about-cliniq-title-about {
+  display: block;
+  color: #000000;
+  font-size: 54px;
+}
+
+.about-cliniq-title-brand {
+  display: block;
+  color: #990000;
+  font-size: 65px;
+}
+
+/* CLINIQ Description */
+.about-cliniq-intro p {
+  max-width: 330px;
+  margin: 13px auto 0;
+  color: #333333;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* CLINIQ Information Card */
+.about-cliniq-info-card {
+  width: 100%;
+  min-height: 85px;
+  margin-top: 20px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #ffe5e5;
+  border: 2px solid #990000;
+  border-radius: 16px;
+  box-shadow: 0 3px 4px #00000030;
+}
+
+/* CLINIQ Symbol */
+.about-cliniq-symbol {
+  width: 65px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-cliniq-symbol svg {
+  width: 55px;
+  height: 55px;
+}
+
+/* Vertical Divider */
+.about-cliniq-info-divider {
+  width: 1px;
+  height: 60px;
+  background-color: #c44b4b;
+  flex-shrink: 0;
+}
+
+/* Information Card Text */
+.about-cliniq-info-card p {
+  margin: 0;
+  color: #333333;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Features Section */
+.about-cliniq-features {
+  margin-top: 20px;
+}
+
+/* What CLINIQ Offers Heading */
+.about-cliniq-features h2 {
+  margin: 0 0 15px;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.about-cliniq-features h2 span {
+  color: #990000;
+}
+
+/* Feature Cards Container */
+.about-cliniq-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+/* Individual Feature Card */
+.about-cliniq-feature-card {
+  width: 100%;
+  min-height: 58px;
+  padding: 10px 17px;
+  background-color: #ffe5e5;
+  border: 2px solid #990000;
+  border-radius: 15px;
+  box-shadow: 0 3px 4px #00000030;
+}
+
+/* Feature Title */
+.about-cliniq-feature-card h3 {
+  margin: 0 0 3px;
+  color: #990000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Feature Description */
+.about-cliniq-feature-card p {
+  margin: 0;
+  color: #333333;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Version Information */
+.about-cliniq-version {
+  margin-top: auto;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.about-cliniq-version p {
+  margin: 2px 0;
+  color: #888888;
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+/* Bottom Navigation */
+.about-cliniq-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  min-height: 67px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background-color: #990000;
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+/* Navigation Buttons */
+.about-cliniq-bottom-nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Active Profile Navigation */
+.about-cliniq-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Navigation Icons */
+.about-cliniq-nav-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Smaller Phone Screens */
+@media (max-width: 360px) {
+  .about-cliniq-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .about-cliniq-title-about {
+    font-size: 46px;
+  }
+
+  .about-cliniq-title-brand {
+    font-size: 55px;
+  }
+
+  .about-cliniq-intro p {
+    font-size: 11px;
+  }
+
+  .about-cliniq-info-card p {
+    font-size: 11px;
+  }
+
+  .about-cliniq-features h2 {
+    font-size: 22px;
+  }
+
+  .about-cliniq-feature-card h3 {
+    font-size: 14px;
+  }
+
+  .about-cliniq-feature-card p {
+    font-size: 11px;
+  }
+}
+
+/* Shorter Phone Screens */
+@media (max-height: 700px) {
+  .about-cliniq-content {
+    padding-top: 15px;
+    padding-bottom: 100px;
+  }
+
+  .about-cliniq-version {
+    padding-top: 20px;
+  }
+}

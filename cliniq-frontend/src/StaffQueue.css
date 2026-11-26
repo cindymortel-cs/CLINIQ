@@ -1,0 +1,421 @@
+
+/* MAIN QUEUE MANAGEMENT SCREEN */
+.staff-queue-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+.staff-queue-screen,
+.staff-queue-screen * {
+  box-sizing: border-box;
+}
+
+/* LEFT SIDEBAR */
+.staff-queue-sidebar {
+  width: 220px;
+  min-width: 220px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #990000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CLINIQ LOGO */
+.staff-queue-brand {
+  height: 92px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.staff-queue-logo {
+  width: 185px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* SIDEBAR NAVIGATION */
+.staff-queue-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 8px 12px;
+}
+
+.staff-queue-menu-item {
+  width: 100%;
+  min-height: 49px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.staff-queue-menu-item:hover {
+  background-color: #b92727;
+}
+
+.staff-queue-menu-item.active {
+  background-color: #ffe5e5;
+  color: #990000;
+}
+
+/* RIGHT MAIN AREA */
+.staff-queue-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOP RED HEADER */
+.staff-queue-topbar {
+  width: 100%;
+  height: 57px;
+  min-height: 57px;
+  padding: 0 22px;
+  background-color: #990000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* STAFF PROFILE ICON */
+.staff-queue-profile {
+  width: 39px;
+  height: 39px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.staff-queue-profile svg {
+  width: 36px;
+  height: 36px;
+}
+
+/* QUEUE CONTENT */
+.staff-queue-content {
+  flex: 1;
+  width: 100%;
+  padding: 20px 25px 25px;
+  background-color: #fff7f7;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PAGE HEADING */
+.staff-queue-title {
+  margin: 0;
+  color: #000000;
+  font-size: clamp(36px, 4.5vw, 58px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.staff-queue-title span {
+  color: #990000;
+}
+
+/* SUBTITLE */
+.staff-queue-subtitle {
+  margin: 7px 0 20px;
+  color: #777777;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* SEARCH BAR AND CALL NEXT */
+.staff-queue-toolbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+/* SEARCH INPUT */
+.staff-queue-search {
+  flex: 1;
+  min-width: 0;
+  height: 47px;
+  padding: 11px 20px;
+  border: 1px solid #999999;
+  border-radius: 13px;
+  background-color: #fff7f7;
+  box-shadow: 0 3px 4px #00000025;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.staff-queue-search::placeholder {
+  color: #999999;
+}
+
+.staff-queue-search:focus {
+  border: 2px solid #990000;
+}
+
+/* CALL NEXT BUTTON */
+.staff-queue-call-next {
+  width: 175px;
+  min-width: 175px;
+  min-height: 45px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 13px;
+  background-color: #a00000;
+  box-shadow: 0 4px 4px #00000030;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-queue-call-next:hover {
+  background-color: #800000;
+}
+
+/* TABLE WRAPPER */
+.staff-queue-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* QUEUE TABLE */
+.staff-queue-table {
+  width: 100%;
+  min-width: 570px;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  table-layout: auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* TABLE HEADER */
+.staff-queue-table thead th {
+  padding: 11px 14px;
+  border-top: 2px solid #990000;
+  border-bottom: 2px solid #990000;
+  background-color: #fff7f7;
+  color: #000000;
+  font-weight: bold;
+  text-align: left;
+}
+
+.staff-queue-table thead th:first-child {
+  border-left: 2px solid #990000;
+  border-radius: 6px 0 0 6px;
+}
+
+.staff-queue-table thead th:last-child {
+  border-right: 2px solid #990000;
+  border-radius: 0 6px 6px 0;
+}
+
+/* TABLE ROWS */
+.staff-queue-table tbody td {
+  padding: 9px 14px;
+  border-top: 2px solid #990000;
+  border-bottom: 2px solid #990000;
+  background-color: #fff0f0;
+  color: #222222;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.staff-queue-table tbody td:first-child {
+  border-left: 2px solid #990000;
+  border-radius: 6px 0 0 6px;
+}
+
+.staff-queue-table tbody td:last-child {
+  border-right: 2px solid #990000;
+  border-radius: 0 6px 6px 0;
+}
+
+/* CLICKABLE PATIENT ROWS */
+.staff-queue-row {
+  cursor: pointer;
+}
+
+.staff-queue-row:hover td {
+  background-color: #ffe2e2;
+}
+
+/* SELECTED PATIENT - LIGHT RED */
+.staff-queue-row.selected td,
+.staff-queue-row.selected:hover td {
+  background-color: #ffb9b9;
+}
+
+/* TICKET BUTTON INSIDE TABLE */
+.staff-queue-ticket-button {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* EMPTY SEARCH RESULTS */
+.staff-queue-table tbody td.staff-queue-empty {
+  padding: 18px;
+  border: 2px solid #990000;
+  border-radius: 6px;
+  color: #777777;
+  text-align: center;
+}
+
+/* BOTTOM NOTIFICATION AREA */
+.staff-queue-bottom {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 36px;
+}
+
+/* SELECTED PATIENT BANNER */
+.staff-queue-selected-banner {
+  width: 100%;
+  min-height: 43px;
+  padding: 12px 16px;
+  border: 1px solid #990000;
+  border-radius: 11px;
+  background-color: #ffb9b9;
+  color: #990000;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+/* DEMO NOTICE */
+.staff-queue-notice {
+  margin-top: 12px;
+  padding: 12px 16px;
+  border: 1px solid #990000;
+  border-radius: 10px;
+  background-color: #ffe5e5;
+  color: #990000;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+.staff-queue-menu-item:focus-visible,
+.staff-queue-profile:focus-visible,
+.staff-queue-call-next:focus-visible,
+.staff-queue-ticket-button:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+/* MEDIUM DESKTOP / TABLET */
+@media (max-width: 1100px) {
+  .staff-queue-sidebar {
+    width: 210px;
+    min-width: 210px;
+  }
+
+  .staff-queue-content {
+    padding: 20px 24px 25px;
+  }
+
+  .staff-queue-menu-item {
+    font-size: 18px;
+  }
+
+  .staff-queue-toolbar {
+    gap: 20px;
+  }
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 760px) {
+  .staff-queue-sidebar {
+    width: 160px;
+    min-width: 160px;
+  }
+
+  .staff-queue-brand {
+    height: 75px;
+    padding: 12px;
+  }
+
+  .staff-queue-logo {
+    width: 140px;
+  }
+
+  .staff-queue-menu {
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .staff-queue-menu-item {
+    min-height: 42px;
+    font-size: 14px;
+  }
+
+  .staff-queue-content {
+    padding: 18px 14px 25px;
+  }
+
+  .staff-queue-title {
+    font-size: 35px;
+  }
+
+  .staff-queue-subtitle {
+    font-size: 13px;
+  }
+
+  .staff-queue-toolbar {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .staff-queue-search {
+    flex-basis: 100%;
+  }
+
+  .staff-queue-call-next {
+    width: 155px;
+    min-width: 155px;
+  }
+
+  .staff-queue-selected-banner {
+    font-size: 13px;
+  }
+}

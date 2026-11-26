@@ -1,0 +1,276 @@
+
+/* Main Screen */
+.clinic-connection-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.clinic-connection-header {
+  height: 52px;
+  padding: 0 15px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Back Button */
+.clinic-connection-back {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #990000;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.clinic-connection-header h2 {
+  margin: 0;
+  color: #990000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Main Content */
+.clinic-connection-content {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 110px 28px 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Red Wi-Fi Icon */
+.clinic-connection-icon {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background-color: #a00000;
+  box-shadow: 0 4px 4px #00000030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: 25px;
+}
+
+.clinic-connection-icon svg {
+  width: 110px;
+  height: 110px;
+}
+
+/* Connection Heading */
+.clinic-connection-title {
+  margin: 0 0 6px;
+  color: #000000;
+  font-size: clamp(24px, 7vw, 34px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.clinic-connection-title span {
+  color: #990000;
+}
+
+/* Subtitle */
+.clinic-connection-subtitle {
+  margin: 0 0 25px;
+  color: #333333;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Connection Information Box */
+.clinic-connection-notice {
+  width: 100%;
+  padding: 13px 14px;
+  background-color: #c34d4d;
+  border-radius: 13px;
+  box-shadow: 0 4px 4px #00000030;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Notice Heading */
+.clinic-connection-notice-heading {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.clinic-connection-notice-heading strong {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Notice Description */
+.clinic-connection-notice p {
+  margin: 7px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Exclamation Icon */
+.clinic-connection-alert-icon {
+  width: 29px;
+  height: 29px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Try Again Button */
+.clinic-connection-try-again {
+  width: 190px;
+  max-width: 100%;
+  min-height: 50px;
+  margin-top: 32px;
+  padding: 10px 15px;
+  background-color: #a00000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px #00000030;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clinic-connection-try-again:active {
+  background-color: #800000;
+}
+
+/* Temporary Demo Button */
+.clinic-connection-demo-button {
+  width: 250px;
+  max-width: 100%;
+  min-height: 42px;
+  margin-top: 22px;
+  padding: 10px 12px;
+  background-color: #ffe5e5;
+  border: 2px solid #990000;
+  border-radius: 13px;
+  color: #990000;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clinic-connection-demo-button:active {
+  background-color: #ffd5d5;
+}
+
+/* Frontend Preview Notice */
+.clinic-connection-preview {
+  margin: 17px 0 0;
+  color: #990000;
+  font-size: 11px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Bottom Navigation */
+.clinic-connection-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  min-height: 67px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background-color: #990000;
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+/* Navigation Buttons */
+.clinic-connection-bottom-nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Active Profile Navigation */
+.clinic-connection-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Navigation Icons */
+.clinic-connection-nav-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Smaller Phone Screens */
+@media (max-width: 360px) {
+  .clinic-connection-content {
+    padding: 85px 18px 110px;
+  }
+
+  .clinic-connection-icon {
+    width: 145px;
+    height: 145px;
+  }
+
+  .clinic-connection-icon svg {
+    width: 95px;
+    height: 95px;
+  }
+
+  .clinic-connection-title {
+    font-size: 25px;
+  }
+
+  .clinic-connection-notice-heading strong {
+    font-size: 14px;
+  }
+
+  .clinic-connection-notice p {
+    font-size: 11px;
+  }
+
+  .clinic-connection-try-again {
+    font-size: 17px;
+  }
+}
+
+/* Shorter Phone Screens */
+@media (max-height: 700px) {
+  .clinic-connection-content {
+    padding-top: 65px;
+    padding-bottom: 110px;
+  }
+}

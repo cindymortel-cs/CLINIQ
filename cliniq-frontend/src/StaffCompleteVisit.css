@@ -1,0 +1,344 @@
+
+/* MAIN COMPLETE VISIT SCREEN */
+.staff-complete-visit-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+.staff-complete-visit-screen,
+.staff-complete-visit-screen * {
+  box-sizing: border-box;
+}
+
+/* LEFT SIDEBAR */
+.staff-complete-visit-sidebar {
+  width: 220px;
+  min-width: 220px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #990000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CLINIQ LOGO */
+.staff-complete-visit-brand {
+  height: 92px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.staff-complete-visit-logo {
+  display: block;
+  width: 185px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* SIDEBAR NAVIGATION */
+.staff-complete-visit-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 8px 12px;
+}
+
+.staff-complete-visit-menu-item {
+  width: 100%;
+  min-height: 49px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.staff-complete-visit-menu-item:hover {
+  background-color: #b92727;
+}
+
+.staff-complete-visit-menu-item.active {
+  background-color: #ffe5e5;
+  color: #990000;
+}
+
+/* RIGHT MAIN AREA */
+.staff-complete-visit-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOP RED HEADER */
+.staff-complete-visit-topbar {
+  width: 100%;
+  height: 57px;
+  min-height: 57px;
+  padding: 0 22px;
+  background-color: #990000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* STAFF PROFILE ICON */
+.staff-complete-visit-profile {
+  width: 39px;
+  height: 39px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.staff-complete-visit-profile svg {
+  width: 36px;
+  height: 36px;
+}
+
+/* MAIN CONTENT */
+.staff-complete-visit-content {
+  flex: 1;
+  width: 100%;
+  padding: 20px 25px 45px;
+  background-color: #fff7f7;
+}
+
+/* PAGE TITLE */
+.staff-complete-visit-title {
+  margin: 0;
+  color: #000000;
+  font-size: clamp(36px, 4.5vw, 58px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.staff-complete-visit-title span {
+  color: #990000;
+}
+
+/* PAGE SUBTITLE */
+.staff-complete-visit-subtitle {
+  margin: 9px 0 28px;
+  color: #777777;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* VISIT INFORMATION CARD */
+.staff-complete-visit-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 20px 22px 25px;
+  border: 1.5px solid #999999;
+  border-radius: 13px;
+  background-color: #fff7f7;
+}
+
+/* PATIENT INFORMATION */
+.staff-complete-visit-patient {
+  margin: 0 0 18px;
+  color: #000000;
+  font-size: clamp(22px, 2.5vw, 31px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* FORM FIELDS */
+.staff-complete-visit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 23px;
+}
+
+/* FIELD LABEL */
+.staff-complete-visit-field label {
+  padding-left: 8px;
+  color: #111111;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* FIELD INPUT */
+.staff-complete-visit-field input {
+  width: 100%;
+  height: 44px;
+  padding: 10px 14px;
+  border: 1.5px solid #b00000;
+  border-radius: 11px;
+  background-color: #fff7f7;
+  color: #333333;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+/* READ-ONLY INPUT STYLE */
+.staff-complete-visit-field input[readonly] {
+  cursor: default;
+}
+
+/* RECORD NOTE */
+.staff-complete-visit-note {
+  margin: -4px 0 0;
+  padding-left: 8px;
+  color: #999999;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+/* BUTTON CONTAINER */
+.staff-complete-visit-actions {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 34px;
+  display: flex;
+  justify-content: center;
+}
+
+/* COMPLETE AND SAVE BUTTON */
+.staff-complete-visit-save {
+  width: 250px;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 13px;
+  background-color: #a00000;
+  box-shadow: 0 4px 4px #00000030;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-complete-visit-save:hover {
+  background-color: #800000;
+}
+
+/* DEMO NOTIFICATION */
+.staff-complete-visit-notice {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 22px;
+  padding: 13px 16px;
+  border: 1px solid #990000;
+  border-radius: 10px;
+  background-color: #ffe5e5;
+  color: #990000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+.staff-complete-visit-menu-item:focus-visible,
+.staff-complete-visit-profile:focus-visible,
+.staff-complete-visit-save:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+/* MEDIUM DESKTOP / TABLET */
+@media (max-width: 1100px) {
+  .staff-complete-visit-sidebar {
+    width: 210px;
+    min-width: 210px;
+  }
+
+  .staff-complete-visit-content {
+    padding: 20px 24px 40px;
+  }
+
+  .staff-complete-visit-menu-item {
+    font-size: 18px;
+  }
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 760px) {
+  .staff-complete-visit-sidebar {
+    width: 160px;
+    min-width: 160px;
+  }
+
+  .staff-complete-visit-brand {
+    height: 75px;
+    padding: 12px;
+  }
+
+  .staff-complete-visit-logo {
+    width: 140px;
+  }
+
+  .staff-complete-visit-menu {
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .staff-complete-visit-menu-item {
+    min-height: 42px;
+    font-size: 14px;
+  }
+
+  .staff-complete-visit-content {
+    padding: 18px 14px 35px;
+  }
+
+  .staff-complete-visit-title {
+    font-size: 35px;
+  }
+
+  .staff-complete-visit-subtitle {
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .staff-complete-visit-card {
+    padding: 17px 14px 20px;
+  }
+
+  .staff-complete-visit-patient {
+    font-size: 22px;
+  }
+
+  .staff-complete-visit-field label {
+    font-size: 13px;
+  }
+
+  .staff-complete-visit-field input {
+    font-size: 13px;
+  }
+
+  .staff-complete-visit-note {
+    font-size: 11px;
+  }
+
+  .staff-complete-visit-save {
+    font-size: 14px;
+  }
+}

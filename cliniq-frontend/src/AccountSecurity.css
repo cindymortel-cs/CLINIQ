@@ -1,0 +1,361 @@
+
+/* MAIN ACCOUNT & SECURITY SCREEN */
+.account-security-screen {
+  width: 100%;
+  max-width: 430px;
+  height: 100vh;
+  height: 100dvh;
+  margin: 0 auto;
+  background-color: #fff7f7;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.account-security-screen,
+.account-security-screen * {
+  box-sizing: border-box;
+}
+
+/* TOP HEADER */
+.account-security-header {
+  width: 100%;
+  min-height: 57px;
+  padding: 10px 16px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 23px 23px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* BACK BUTTON */
+.account-security-back {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #a00000;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* HEADER TEXT */
+.account-security-header h2 {
+  margin: 0;
+  color: #990000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* MAIN CONTENT */
+.account-security-content {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  padding: 25px 28px 30px;
+  background-color: #fff7f7;
+  overflow-y: auto;
+}
+
+/* PAGE TITLE */
+.account-security-title {
+  margin: 0 0 27px;
+  color: #000000;
+  font-size: 43px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+/* RED SECOND LINE */
+.account-security-title span {
+  display: block;
+  color: #990000;
+}
+
+/* SECURITY CARDS */
+.account-security-card {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 19px;
+  padding: 14px 15px 18px;
+  background-color: #ffe7e7;
+  border: 2px solid #c9b3b3;
+  border-radius: 11px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* CARD HEADING */
+.account-security-card-title {
+  margin: 0 0 3px;
+  color: #990000;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* CARD DESCRIPTION */
+.account-security-card-description {
+  margin: 0 0 14px;
+  color: #333333;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* PASSWORD FORM */
+.account-security-card form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* PASSWORD FIELDS */
+.account-security-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 7px;
+}
+
+/* FIELD LABELS */
+.account-security-field label {
+  color: #111111;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* PASSWORD INPUT BOXES */
+.account-security-field input {
+  width: 100%;
+  height: 31px;
+  padding: 6px 10px;
+  border: 1px solid #b00000;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  outline: none;
+}
+
+/* INPUT FOCUS */
+.account-security-field input:focus {
+  border: 2px solid #990000;
+}
+
+/* FORGOT PASSWORD CONTAINER */
+.account-security-forgot-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1px 0 7px;
+}
+
+/* FORGOT PASSWORD LINK */
+.account-security-forgot {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #990000;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* SAVE PASSWORD BUTTON */
+.account-security-save {
+  width: 115px;
+  min-height: 30px;
+  margin: 16px auto 0;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 18px;
+  background-color: #a00000;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.account-security-save:hover {
+  background-color: #800000;
+}
+
+/* MANAGE DEVICES CARD */
+.account-security-devices {
+  min-height: 225px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CURRENTLY LOGGED IN */
+.account-security-devices-label {
+  margin: 2px 0 7px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d4bfbf;
+  color: #111111;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* DEVICE INFORMATION */
+.account-security-device {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+/* DEVICE ICON */
+.account-security-device-icon {
+  color: #777777;
+  font-size: 19px;
+  line-height: 1;
+}
+
+/* DEVICE NAME AND DESCRIPTION */
+.account-security-device-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.account-security-device-info strong {
+  display: block;
+  color: #990000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.account-security-device-info p {
+  margin: 3px 0 0;
+  color: #777777;
+  font-size: 9px;
+  line-height: 1.3;
+}
+
+/* SIGN OUT ALL DEVICES BUTTON */
+.account-security-signout {
+  width: 205px;
+  max-width: 100%;
+  min-height: 31px;
+  margin: auto auto 0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 18px;
+  background-color: #a00000;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.account-security-signout:hover {
+  background-color: #800000;
+}
+
+/* DEMO NOTIFICATION */
+.account-security-notice {
+  width: 100%;
+  max-width: 320px;
+  margin: 8px auto 15px;
+  padding: 12px;
+  border: 1px solid #990000;
+  border-radius: 10px;
+  background-color: #ffe5e5;
+  color: #990000;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* BOTTOM NAVIGATION */
+.account-security-bottom-nav {
+  width: 100%;
+  min-height: 67px;
+  padding: 0 5px;
+  border-radius: 25px 25px 0 0;
+  background-color: #a00000;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-shrink: 0;
+}
+
+/* NAVIGATION BUTTONS */
+.account-security-bottom-nav button {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 4px 5px;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+/* NAVIGATION ICONS */
+.account-security-nav-icon {
+  display: block;
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+/* ACTIVE PROFILE TAB */
+.account-security-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 21px 21px 0 0;
+  background-color: #a00000;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+.account-security-back:focus-visible,
+.account-security-forgot:focus-visible,
+.account-security-save:focus-visible,
+.account-security-signout:focus-visible,
+.account-security-bottom-nav button:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 2px;
+}
+
+/* SMALLER MOBILE SCREENS */
+@media (max-width: 380px) {
+  .account-security-content {
+    padding: 22px 22px 25px;
+  }
+
+  .account-security-title {
+    font-size: 38px;
+  }
+
+  .account-security-card {
+    padding: 13px 12px 16px;
+  }
+
+  .account-security-card-title {
+    font-size: 18px;
+  }
+
+  .account-security-bottom-nav button {
+    font-size: 10px;
+  }
+}

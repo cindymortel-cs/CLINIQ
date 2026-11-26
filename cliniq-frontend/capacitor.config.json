@@ -1,0 +1,9 @@
+{
+  "appId": "com.cliniq.app",
+  "appName": "CLINIQ",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

@@ -1,0 +1,420 @@
+
+/* MAIN PRIORITY SCREEN */
+.staff-priority-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+.staff-priority-screen,
+.staff-priority-screen * {
+  box-sizing: border-box;
+}
+
+/* LEFT SIDEBAR */
+.staff-priority-sidebar {
+  width: 220px;
+  min-width: 220px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #990000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CLINIQ LOGO */
+.staff-priority-brand {
+  height: 92px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.staff-priority-logo {
+  display: block;
+  width: 185px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* SIDEBAR NAVIGATION */
+.staff-priority-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 8px 12px;
+}
+
+.staff-priority-menu-item {
+  width: 100%;
+  min-height: 49px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.staff-priority-menu-item:hover {
+  background-color: #b92727;
+}
+
+.staff-priority-menu-item.active {
+  background-color: #ffe5e5;
+  color: #990000;
+}
+
+/* RIGHT MAIN AREA */
+.staff-priority-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TOP RED HEADER */
+.staff-priority-topbar {
+  width: 100%;
+  height: 57px;
+  min-height: 57px;
+  padding: 0 22px;
+  background-color: #990000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* STAFF PROFILE ICON */
+.staff-priority-profile {
+  width: 39px;
+  height: 39px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.staff-priority-profile svg {
+  width: 36px;
+  height: 36px;
+}
+
+/* MAIN CONTENT */
+.staff-priority-content {
+  flex: 1;
+  width: 100%;
+  padding: 20px 25px 45px;
+  background-color: #fff7f7;
+}
+
+/* PAGE TITLE */
+.staff-priority-title {
+  margin: 0;
+  color: #000000;
+  font-size: clamp(36px, 4.5vw, 58px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.staff-priority-title span {
+  color: #990000;
+}
+
+/* PAGE SUBTITLE */
+.staff-priority-subtitle {
+  margin: 9px 0 23px;
+  color: #777777;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* PATIENT INFORMATION CARD */
+.staff-priority-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 18px 21px 22px;
+  border: 3px solid #990000;
+  border-radius: 13px;
+  background-color: #fff7f7;
+}
+
+/* PATIENT NAME */
+.staff-priority-patient {
+  margin: 0 0 8px;
+  color: #000000;
+  font-size: clamp(22px, 2.5vw, 31px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* PATIENT SERVICE */
+.staff-priority-service {
+  margin: 0 0 9px;
+  color: #111111;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* HORIZONTAL DIVIDER */
+.staff-priority-divider {
+  width: 100%;
+  height: 1px;
+  margin: 8px 0 11px;
+  background-color: #888888;
+}
+
+/* PRIORITY SELECTION BOXES */
+.staff-priority-option {
+  position: relative;
+  width: 100%;
+  min-height: 73px;
+  margin-bottom: 14px;
+  padding: 11px 24px;
+  border: 1.5px solid #999999;
+  border-radius: 13px;
+  background-color: #fff0f0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* HIDE RADIO CIRCLE BUT KEEP INPUT ACCESSIBLE */
+.staff-priority-option input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+/* SELECTED PRIORITY */
+.staff-priority-option.selected {
+  border: 2px solid #990000;
+  background-color: #ffb9b9;
+}
+
+/* HOVER EFFECT */
+.staff-priority-option:hover {
+  border-color: #990000;
+}
+
+/* KEYBOARD FOCUS */
+.staff-priority-option:focus-within {
+  outline: 3px solid #555555;
+  outline-offset: 2px;
+}
+
+/* TEXT INSIDE PRIORITY BOX */
+.staff-priority-option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #111111;
+}
+
+/* PRIORITY LABEL */
+.staff-priority-option-content strong {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* PRIORITY DESCRIPTION */
+.staff-priority-option-content span {
+  color: #111111;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+/* REMOVE EXTRA BOTTOM MARGIN */
+.staff-priority-option:last-child {
+  margin-bottom: 0;
+}
+
+/* CONFIRM BUTTON CONTAINER */
+.staff-priority-actions {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONFIRM PRIORITY BUTTON */
+.staff-priority-confirm {
+  width: 272px;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 13px;
+  background-color: #a00000;
+  box-shadow: 0 4px 4px #00000030;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-priority-confirm:hover {
+  background-color: #800000;
+}
+
+.staff-priority-confirm:focus-visible,
+.staff-priority-menu-item:focus-visible,
+.staff-priority-profile:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+/* FRONTEND DEMO NOTICE */
+.staff-priority-notice {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 22px;
+  padding: 13px 16px;
+  border: 1px solid #990000;
+  border-radius: 10px;
+  background-color: #ffe5e5;
+  color: #990000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* MEDIUM DESKTOP / TABLET */
+@media (max-width: 1100px) {
+  .staff-priority-sidebar {
+    width: 210px;
+    min-width: 210px;
+  }
+
+  .staff-priority-content {
+    padding: 20px 24px 40px;
+  }
+
+  .staff-priority-menu-item {
+    font-size: 18px;
+  }
+
+  .staff-priority-card {
+    max-width: 650px;
+  }
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 760px) {
+  .staff-priority-sidebar {
+    width: 160px;
+    min-width: 160px;
+  }
+
+  .staff-priority-brand {
+    height: 75px;
+    padding: 12px;
+  }
+
+  .staff-priority-logo {
+    width: 140px;
+  }
+
+  .staff-priority-menu {
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .staff-priority-menu-item {
+    min-height: 42px;
+    font-size: 14px;
+  }
+
+  .staff-priority-content {
+    padding: 18px 14px 35px;
+  }
+
+  .staff-priority-title {
+    font-size: 35px;
+  }
+
+  .staff-priority-subtitle {
+    font-size: 13px;
+  }
+
+  .staff-priority-card {
+    padding: 16px 14px;
+  }
+
+  .staff-priority-patient {
+    font-size: 22px;
+  }
+
+  .staff-priority-service {
+    font-size: 14px;
+  }
+
+  .staff-priority-option {
+    padding: 11px 13px;
+  }
+
+  .staff-priority-option-content strong {
+    font-size: 17px;
+  }
+
+  .staff-priority-option-content span {
+    font-size: 13px;
+  }
+
+  .staff-priority-confirm {
+    font-size: 14px;
+  }
+}
+
+/* URGENT NOTE - UPDATED FIGMA DESIGN */
+
+.staff-priority-urgent-note {
+  margin: 12px 0 15px;
+  padding: 0;
+  color: #111111;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* URGENT NOTE LABEL */
+.staff-priority-urgent-note strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #111111;
+  font-weight: 800;
+}
+
+/* PATIENT'S URGENT NOTE */
+.staff-priority-urgent-note span {
+  display: block;
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  overflow-wrap: break-word;
+}

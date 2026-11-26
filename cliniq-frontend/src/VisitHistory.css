@@ -1,0 +1,232 @@
+
+/* Main Screen */
+.visit-history-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* CLINIQ Header */
+.visit-history-header {
+  height: 52px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.visit-history-logo {
+  width: 125px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Main Content */
+.visit-history-content {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 20px 28px 100px;
+}
+
+/* Page Heading */
+.visit-history-intro h1 {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #000000;
+  letter-spacing: -1px;
+}
+
+.visit-history-intro p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #333333;
+}
+
+/* Filter Buttons */
+.visit-history-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+
+.visit-history-filter {
+  flex: 1;
+  min-height: 36px;
+  padding: 7px 10px;
+  background: #ffffff;
+  border: 2px solid #990000;
+  border-radius: 25px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 3px 4px #00000020;
+}
+
+.visit-history-filter.active {
+  background-color: #a00000;
+  color: #ffffff;
+}
+
+/* Visit Records */
+.visit-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.visit-history-card {
+  width: 100%;
+  min-height: 112px;
+  padding: 12px 17px;
+  background-color: #ffffff;
+  border: 3px solid #990000;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px #00000030;
+}
+
+/* Ticket Number and Status */
+.visit-history-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.visit-history-card h2 {
+  margin: 0 0 4px;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1;
+  color: #990000;
+}
+
+/* Queue Status Labels */
+.visit-history-status {
+  flex-shrink: 0;
+  padding: 4px 13px;
+  border: 1px solid #990000;
+  border-radius: 20px;
+  font-size: 10px;
+  line-height: 1.1;
+  color: #000000;
+}
+
+.visit-history-status.ongoing {
+  background-color: #fff3c4;
+}
+
+.visit-history-status.completed {
+  background-color: #d9f1c7;
+}
+
+/* Service and Date */
+.visit-history-service,
+.visit-history-date {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #000000;
+}
+
+.visit-history-service {
+  margin-top: 5px;
+}
+
+/* Empty State */
+.visit-history-empty {
+  margin: 25px 0;
+  text-align: center;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* Bottom Navigation Bar */
+.visit-history-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 430px;
+  min-height: 67px;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  background-color: #990000;
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+/* Navigation Buttons */
+.visit-history-bottom-nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Active Visits Navigation */
+.visit-history-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Navigation Icons */
+.visit-history-nav-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Smaller Phone Screens */
+@media (max-width: 360px) {
+  .visit-history-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .visit-history-intro h1 {
+    font-size: 38px;
+  }
+
+  .visit-history-filters {
+    gap: 7px;
+  }
+
+  .visit-history-filter {
+    font-size: 12px;
+    padding: 7px 5px;
+  }
+
+  .visit-history-card {
+    padding: 12px;
+  }
+
+  .visit-history-card h2 {
+    font-size: 26px;
+  }
+
+  .visit-history-status {
+    padding: 4px 8px;
+  }
+}

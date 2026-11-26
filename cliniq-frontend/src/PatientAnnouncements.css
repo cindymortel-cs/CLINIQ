@@ -1,0 +1,240 @@
+
+/* MAIN PATIENT ANNOUNCEMENTS SCREEN */
+.patient-announcements-screen {
+  width: 100%;
+  max-width: 430px;
+  height: 100vh;
+  height: 100dvh;
+  margin: 0 auto;
+  background-color: #fff7f7;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.patient-announcements-screen,
+.patient-announcements-screen * {
+  box-sizing: border-box;
+}
+
+/* CLINIQ HEADER */
+.patient-announcements-header {
+  width: 100%;
+  min-height: 58px;
+  padding: 9px 15px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 23px 23px;
+
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* HEADER LOGO */
+.patient-announcements-logo {
+  display: block;
+  width: 148px;
+  max-width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* MAIN CONTENT */
+.patient-announcements-content {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  padding: 29px 27px 35px;
+  background-color: #fff7f7;
+  overflow-y: auto;
+}
+
+/* PAGE TITLE */
+.patient-announcements-title {
+  margin: 0 0 31px;
+  color: #000000;
+  font-size: 37px;
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.8px;
+}
+
+/* RED CLINIC TEXT */
+.patient-announcements-title span {
+  display: block;
+  color: #990000;
+  font-size: 42px;
+  margin-bottom: 2px;
+}
+
+/* ANNOUNCEMENTS LIST */
+.patient-announcements-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ANNOUNCEMENT CARDS */
+.patient-announcements-card {
+  width: 100%;
+  max-width: 350px;
+  min-height: 96px;
+  padding: 13px 18px;
+
+  background-color: #ffe5e5;
+  border: 3px solid #990000;
+  border-radius: 19px;
+
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.22);
+}
+
+/* ANNOUNCEMENT TITLE */
+.patient-announcements-card h2 {
+  margin: 0 0 9px;
+
+  color: #990000;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* ANNOUNCEMENT MESSAGE */
+.patient-announcements-card p {
+  margin: 0;
+
+  color: #111111;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+/* EMPTY SECOND CARD FROM FIGMA */
+.patient-announcements-placeholder {
+  width: 100%;
+  max-width: 350px;
+  min-height: 95px;
+
+  background-color: #ffe5e5;
+  border: 3px solid #990000;
+  border-radius: 19px;
+
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.22);
+}
+
+/* NO ANNOUNCEMENTS MESSAGE */
+.patient-announcements-empty {
+  width: 100%;
+  margin: 15px 0;
+  padding: 20px;
+
+  border: 2px solid #990000;
+  border-radius: 15px;
+  background-color: #ffe5e5;
+
+  color: #990000;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* BOTTOM NAVIGATION */
+.patient-announcements-bottom-nav {
+  width: 100%;
+  min-height: 67px;
+  padding: 0 5px;
+
+  background-color: #a00000;
+  border-radius: 25px 25px 0 0;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-shrink: 0;
+}
+
+/* NAVIGATION BUTTONS */
+.patient-announcements-bottom-nav button {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 4px 5px;
+
+  border: none;
+  border-radius: 0;
+  background: transparent;
+
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  cursor: pointer;
+}
+
+/* NAVIGATION ICONS */
+.patient-announcements-nav-icon {
+  display: block;
+  color: #ffffff;
+  font-size: 27px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+/* ACTIVE HOME TAB */
+.patient-announcements-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 21px 21px 0 0;
+  background-color: #a00000;
+}
+
+/* NAVIGATION HOVER */
+.patient-announcements-bottom-nav button:hover {
+  background-color: #b91515;
+}
+
+/* KEYBOARD ACCESSIBILITY */
+.patient-announcements-bottom-nav button:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: -3px;
+}
+
+/* SMALL MOBILE SCREENS */
+@media (max-width: 380px) {
+  .patient-announcements-content {
+    padding: 27px 23px 30px;
+  }
+
+  .patient-announcements-title {
+    font-size: 33px;
+  }
+
+  .patient-announcements-title span {
+    font-size: 38px;
+  }
+
+  .patient-announcements-card {
+    padding: 12px 14px;
+  }
+
+  .patient-announcements-card h2 {
+    font-size: 17px;
+  }
+
+  .patient-announcements-card p {
+    font-size: 11px;
+  }
+
+  .patient-announcements-bottom-nav button {
+    font-size: 10px;
+  }
+}

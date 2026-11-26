@@ -1,0 +1,405 @@
+/* Main Staff Dashboard */
+.staff-dashboard-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+/* LEFT SIDEBAR */
+.staff-dashboard-sidebar {
+  width: 220px;
+  min-width: 220px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #990000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* CLINIQ Logo */
+.staff-dashboard-brand {
+  height: 92px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.staff-dashboard-logo {
+  width: 185px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* Sidebar Menu */
+.staff-dashboard-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 8px 12px;
+}
+
+.staff-dashboard-menu-item {
+  width: 100%;
+  min-height: 49px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 14px;
+  background: transparent;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.staff-dashboard-menu-item:hover {
+  background-color: #b92727;
+}
+
+.staff-dashboard-menu-item.active {
+  background-color: #ffe5e5;
+  color: #990000;
+}
+
+/* RIGHT MAIN AREA */
+.staff-dashboard-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Red Header */
+.staff-dashboard-topbar {
+  width: 100%;
+  height: 57px;
+  min-height: 57px;
+  padding: 0 22px;
+  background-color: #990000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Staff Profile Icon */
+.staff-dashboard-profile {
+  width: 39px;
+  height: 39px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.staff-dashboard-profile svg {
+  width: 36px;
+  height: 36px;
+}
+
+/* Dashboard Content */
+.staff-dashboard-content {
+  flex: 1;
+  width: 100%;
+  padding: 20px 25px 45px;
+  background-color: #fff7f7;
+}
+
+/* Page Heading */
+.staff-dashboard-title {
+  margin: 0;
+  color: #000000;
+  font-size: clamp(36px, 4.5vw, 58px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.staff-dashboard-title span {
+  color: #990000;
+}
+
+/* Subtitle */
+.staff-dashboard-subtitle {
+  margin: 4px 0 24px;
+  color: #777777;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* STATISTICS CARDS */
+.staff-dashboard-stats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Individual Stat Card */
+.staff-dashboard-stat-card {
+  min-width: 0;
+  min-height: 90px;
+  padding: 12px 8px;
+  border: 2px solid #990000;
+  border-radius: 13px;
+  background-color: #fff7f7;
+  box-shadow: 0 3px 4px #00000030;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.staff-dashboard-stat-card h3 {
+  margin: 0;
+  color: #990000;
+  font-size: clamp(14px, 1.4vw, 20px);
+  font-weight: 800;
+}
+
+.staff-dashboard-stat-card strong {
+  color: #000000;
+  font-size: clamp(20px, 2.2vw, 30px);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+/* CALL NEXT BUTTON */
+.staff-dashboard-actions {
+  width: 100%;
+  margin: 26px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.staff-dashboard-call-next {
+  width: 175px;
+  max-width: 100%;
+  min-height: 42px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 13px;
+  background-color: #a00000;
+  box-shadow: 0 4px 4px #00000030;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.staff-dashboard-call-next:hover {
+  background-color: #800000;
+}
+
+/* LIVE QUEUE SECTION */
+.staff-dashboard-queue {
+  width: 100%;
+  margin-top: 0;
+}
+
+.staff-dashboard-queue h2 {
+  margin: 0 0 12px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Table Wrapper */
+.staff-dashboard-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Queue Table */
+.staff-dashboard-table {
+  width: 100%;
+  min-width: 590px;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  table-layout: auto;
+  font-size: 14px;
+}
+
+/* Table Header */
+.staff-dashboard-table thead th {
+  padding: 11px 14px;
+  border-top: 2px solid #990000;
+  border-bottom: 2px solid #990000;
+  background-color: #fff7f7;
+  color: #000000;
+  font-weight: bold;
+  text-align: left;
+}
+
+.staff-dashboard-table thead th:first-child {
+  border-left: 2px solid #990000;
+  border-radius: 6px 0 0 6px;
+}
+
+.staff-dashboard-table thead th:last-child {
+  border-right: 2px solid #990000;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Table Rows */
+.staff-dashboard-table tbody td {
+  padding: 9px 14px;
+  border-top: 2px solid #990000;
+  border-bottom: 2px solid #990000;
+  background-color: #fff0f0;
+  color: #222222;
+  text-align: left;
+  transition: background-color 0.15s ease;
+}
+
+.staff-dashboard-table tbody td:first-child {
+  border-left: 2px solid #990000;
+  border-radius: 6px 0 0 6px;
+}
+
+.staff-dashboard-table tbody td:last-child {
+  border-right: 2px solid #990000;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Clickable Live Queue Rows */
+.staff-dashboard-clickable-row {
+  cursor: pointer;
+}
+
+.staff-dashboard-clickable-row:hover td {
+  background-color: #ffdada;
+}
+
+.staff-dashboard-clickable-row:active td {
+  background-color: #ffc5c5;
+}
+
+.staff-dashboard-clickable-row:focus-visible {
+  outline: 3px solid #990000;
+  outline-offset: 2px;
+}
+
+/* Demo Messages */
+.staff-dashboard-notice {
+  margin: 18px 0 0;
+  padding: 12px 16px;
+  background-color: #ffe5e5;
+  border: 1px solid #990000;
+  border-radius: 10px;
+  color: #990000;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.staff-dashboard-preview {
+  margin: 18px 0 0;
+  color: #990000;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Keyboard Accessibility */
+.staff-dashboard-menu-item:focus-visible,
+.staff-dashboard-profile:focus-visible,
+.staff-dashboard-call-next:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+/* Medium Desktop / Tablet */
+@media (max-width: 1100px) {
+  .staff-dashboard-sidebar {
+    width: 210px;
+    min-width: 210px;
+  }
+
+  .staff-dashboard-content {
+    padding: 20px 24px 40px;
+  }
+
+  .staff-dashboard-stats {
+    gap: 16px;
+  }
+
+  .staff-dashboard-stat-card {
+    min-height: 86px;
+  }
+
+  .staff-dashboard-menu-item {
+    font-size: 18px;
+  }
+}
+
+/* Narrow Screens */
+@media (max-width: 760px) {
+  .staff-dashboard-sidebar {
+    width: 160px;
+    min-width: 160px;
+  }
+
+  .staff-dashboard-brand {
+    height: 75px;
+    padding: 12px;
+  }
+
+  .staff-dashboard-logo {
+    width: 140px;
+  }
+
+  .staff-dashboard-menu {
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .staff-dashboard-menu-item {
+    font-size: 14px;
+    min-height: 42px;
+  }
+
+  .staff-dashboard-content {
+    padding: 18px 14px 35px;
+  }
+
+  .staff-dashboard-title {
+    font-size: 35px;
+  }
+
+  .staff-dashboard-subtitle {
+    font-size: 13px;
+  }
+
+  .staff-dashboard-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .staff-dashboard-stat-card h3 {
+    font-size: 14px;
+  }
+
+  .staff-dashboard-stat-card strong {
+    font-size: 22px;
+  }
+
+  .staff-dashboard-queue h2 {
+    font-size: 18px;
+  }
+}

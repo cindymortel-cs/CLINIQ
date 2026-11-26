@@ -1,0 +1,300 @@
+.queue-tracking-screen,
+.queue-tracking-screen *,
+.queue-tracking-screen *::before,
+.queue-tracking-screen *::after {
+  box-sizing: border-box;
+}
+
+/* Main Screen */
+.queue-tracking-screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #fff7f7;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* CLINIQ Header */
+.queue-tracking-header {
+  height: 52px;
+  background-color: #ffe5e5;
+  border-radius: 0 0 22px 22px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+}
+
+.queue-tracking-logo {
+  width: min(125px, 34vw);
+  height: auto;
+  object-fit: contain;
+}
+
+/* Main Content */
+.queue-tracking-content {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px 20px calc(88px + env(safe-area-inset-bottom, 0px));
+}
+
+/* Page Title */
+.queue-tracking-title {
+  margin: 0;
+  color: #000000;
+  font-size: clamp(24px, 6.5vw, 32px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.queue-tracking-subtitle {
+  margin: 5px 0 18px;
+  color: #333333;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+/* Queue Number Card */
+.queue-tracking-number-card {
+  width: 100%;
+  padding: 14px 18px;
+  background-color: #a00000;
+  border-radius: 15px;
+  color: #ffffff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.19);
+}
+
+.queue-tracking-number-card p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+
+.queue-tracking-number-card h2 {
+  margin: 12px 0 8px;
+  font-size: clamp(36px, 11vw, 52px);
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 1.05;
+}
+
+.queue-tracking-number-card span {
+  display: block;
+  border-top: 1px solid rgba(255, 255, 255, 0.75);
+  padding-top: 9px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+/* Queue Information Cards */
+.queue-tracking-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.queue-tracking-info-card {
+  min-width: 0;
+  min-height: 92px;
+  padding: 12px 10px;
+  background-color: #ffffff;
+  border: 2.5px solid #990000;
+  border-radius: 13px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+}
+
+.queue-tracking-info-card p {
+  margin: 0 0 10px;
+  color: #444444;
+  font-size: 11.5px;
+  line-height: 1.2;
+}
+
+.queue-tracking-info-card h3 {
+  margin: 0;
+  color: #333333;
+  font-size: clamp(16px, 4.5vw, 21px);
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.15;
+}
+
+/* Queue Progress */
+.queue-tracking-progress {
+  margin-top: 18px;
+}
+
+.queue-tracking-progress h3 {
+  margin: 0 0 8px;
+  color: #990000;
+  font-size: 12.5px;
+  font-weight: bold;
+}
+
+.queue-progress-bar {
+  width: 100%;
+  height: 16px;
+  background-color: #c94d4d;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.queue-progress-fill {
+  width: 40%;
+  height: 100%;
+  background-color: #990000;
+  border-radius: 20px;
+}
+
+.queue-tracking-progress p {
+  margin: 7px 0 0;
+  font-size: 10.5px;
+  color: #555555;
+  line-height: 1.3;
+}
+
+/* Queue Notification */
+.queue-tracking-notification {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 58px;
+  margin-top: 16px;
+  padding: 10px 12px;
+  background-color: #c94d4d;
+  border-radius: 12px;
+  color: #ffffff;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+}
+
+.queue-notification-icon {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.queue-notification-text {
+  min-width: 0;
+  flex: 1;
+}
+
+.queue-notification-text h3 {
+  margin: 0 0 3px;
+  font-size: 12.5px;
+  font-weight: bold;
+}
+
+.queue-notification-text p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+/* Frontend Preview Notice */
+.queue-tracking-preview {
+  margin-top: 14px;
+  color: #990000;
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Bottom Navigation Bar */
+.queue-tracking-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 62px;
+  padding: 4px 8px calc(4px + env(safe-area-inset-bottom, 0px));
+  background-color: #990000;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+.queue-tracking-bottom-nav button {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.queue-tracking-bottom-nav button.active {
+  border: 1px solid #ffffff;
+  border-bottom: none;
+  border-radius: 16px 16px 0 0;
+}
+
+.queue-tracking-nav-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Smaller Phone Screens */
+@media (max-width: 360px) {
+  .queue-tracking-content {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .queue-tracking-info {
+    gap: 10px;
+  }
+
+  .queue-tracking-info-card {
+    padding: 10px 8px;
+  }
+
+  .queue-tracking-number-card h2 {
+    font-size: 34px;
+  }
+}
+
+/* Preview Notification Button */
+.queue-tracking-demo-button {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  min-height: 42px;
+  margin: 18px auto 0;
+  padding: 9px 12px;
+  background-color: #990000;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  font-size: 12.5px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.queue-tracking-demo-button:active {
+  background-color: #7a0000;
+}
